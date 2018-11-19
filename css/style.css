@@ -1,0 +1,79 @@
+/*
+*{
+padding: 0px;
+margin: 2px;
+}
+ ALL element on the page selector*/
+
+ .menu a{
+ 	background-color: magenta;
+
+ }
+ .menu .menu__item>a{
+ 	background-color: green;
+ } /* дочерний элемент - только 1 уровень дочерних элементов \ only 1st level element select*/
+
+
+.menu .menu__item>a + ul{
+	text-transform: lowercase;
+} /*сестринский элемент - тот, что идет сразу же за а*/
+
+div + p {
+	background: black;
+	color: white;
+} /*естринский элемент - те p, которые идут СРАЗУ ЖЕ после закрытого тега div (НЕ внутри див, а именно следующий за ним) */
+
+ul{
+	color:blue;
+} /*element selector*/
+li{
+	color: orange;
+}
+p{
+	color: red;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+
+[type="text"]{
+	color: blue;
+
+}   /*attribute selector*/
+[href="http://google.com"]{
+	text-transform: uppercase;
+	
+}
+
+.main-link{
+	 color: green;
+}
+.input-text{
+	background-color: yellow;
+}
+.menu {
+	text-transform: capitalize;
+}  /*class selector*/
+
+.active{
+	text-decoration: underline;
+	color: green;
+	font-size: 30px;
+} /*class selector*/
+
+.menu__item{
+	font-weight: bold;
+}
+
+#box{
+	letter-spacing: 10px;
+}/*ID selector*/
+
+#box p{
+color: blue;
+}/*Селектор потомков*/
+div p{
+color: green;
+}/*Селектор потомков*/
+
